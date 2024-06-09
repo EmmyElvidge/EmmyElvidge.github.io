@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@100..700&family=BenchNine:wght@300;400;700&family=Cabin+Condensed:wght@400;500;600;700&family=Concert+One&family=Itim&family=Lalezar&family=League+Spartan:wght@100..900&family=Lilita+One&family=Luckiest+Guy&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Passion+One:wght@400;700;900&family=Pathway+Gothic+One&family=Pragati+Narrow:wght@400;700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sarala:wght@400;700&family=Titan+One&family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
+
+
+:root {
+  --color1: #005e0d;
+  --color2: #525457;
+  --color3: #7B6840;
+  --primaryfont :
+  font-family: font-family: "Sarala", sans-serif;
+}
 body {
   font-family: "Sarala", sans-serif;
   background: #FFEFBA;  /* fallback for old browsers */
@@ -16,7 +26,7 @@ h2 {
 }
 
 li {
-  color: var(--color1);
+  color: var(black);
   margin: 10px;
 }
 
@@ -64,6 +74,7 @@ h1 {
 
 h2 {
   margin: 10px;
+  position: relative;
 }
 
 img {
@@ -86,9 +97,10 @@ img {
 h1 {
   color: #000000; /* Text color */
   font-size: 35px; /* Font size */
-  margin-top: 30px; /* Space between the image and the text */
+  margin-top: 20px; /* Space between the image and the text */
   margin-bottom: 20px;
-  margin-left: -55px;
+  margin-left: 505px;
+  color: var(--color1);
 }
 
 ol {
@@ -103,6 +115,17 @@ h2 {
 
 img {
   width: 300px;
-  margin: 10px;
- 
+  margin-right: 10px;
+
 }
+
+text-container {
+  flex: 2;
+  margin-top: 0px;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
