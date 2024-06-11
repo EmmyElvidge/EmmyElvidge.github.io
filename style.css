@@ -16,13 +16,11 @@ background: linear-gradient(to top, #a4bf80, #effeed); /* W3C, IE 10+/ Edge, Fir
 
 }
 
-h1 {
-  color: var(--color1);
-  text-align: left;
-}
 
 h2 {
   color: var(--color1);
+  padding-top: 1000px;
+ text-align: center;
 }
 
 li {
@@ -51,7 +49,7 @@ span {
   padding: 10px;
   font-size: 4rem;
   float: left;
-  margin-top: -.5em
+  margin-top: 0em
 }
 
 /* Parent  */
@@ -61,21 +59,6 @@ main {
 
 /*Child  */
 
-
-
-h1 {
-  top: 0;
-    left: 68px;
-  position: relative;
-  z-index: -1;
-  
-  margin: 0;
-}
-
-h2 {
-  margin: 10px;
-  position: relative;
-}
 
 img {
   display: block;
@@ -95,12 +78,12 @@ img {
 }
 
 h1 {
-  color: #000000; /* Text color */
-  font-size: 35px; /* Font size */
-  margin-top: 20px; /* Space between the image and the text */
-  margin-bottom: 20px;
-  margin-left: 505px;
-  color: var(--color1);
+  position: static; /* This will place it back in the normal document flow */
+  color: #333; /* Example color, adjust as necessary */
+  font-size: 35px; /* Example size, adjust as necessary */
+  padding: 10px 0; /* Adds vertical padding, adjust as necessary */
+  text-align: center; /* Centers the text */
+  padding-bottom: 100px;
 }
 
 ol {
@@ -109,23 +92,104 @@ ol {
   margin-top: 10px;
 }
 
-h2 {
-  margin-top: 70px;
-}
+
 
 img {
-  width: 300px;
-  margin-right: 10px;
+  display: block; /* Ensures the image does not inline with text */
+  width: 100%; /* Adjust width as necessary, can be less than 100% */
+  max-width: 300px; /* Optional, for controlling size */
+  height: auto; /* Maintains aspect ratio */
+  margin-top: 0; /* Removes any margin above the image */
+  margin-bottom: 5px;
+}
+
+/* Basic reset to reduce browser inconsistencies */
+body, h1, h2, h3, p, ul, figure {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  background-color: #f4f4f4; /* Soft background color */
+}
+
+.container {
+  position: absolute;
+  top: 85px;
+  right: 20px;
+  width: 30%;
+  color: var(--color1);
+  background-color: #67866b;
 
 }
 
-text-container {
-  flex: 2;
+
+
+/* Alternatively, if your HTML structure has different parent containers, target the specific one */
+.main-container {
+  background-color: red; /* Assuming 'main-container' is the outermost parent */
+}
+
+/* If there are other nested elements that also need the background color */
+.container, .container h3, .container ul {
+  background-color: rgb(195, 215, 178); /* Ensures all elements inside the container also have the red background */
+}
+
+h3 {
+  color: var(--color1);
+  width: 100%;
+  font-size: larger;
   margin-top: 0px;
 }
 
-body, html {
-  margin: 0;
-  padding: 0;
+
+ul li {
+  padding: 10px 0; /* Add padding to list items for better readability */
 }
 
+.container { /* Adjust the class name if your container has a different class */
+  display: flex; /* Enables Flexbox */
+  justify-content: center; /* Centers horizontally */
+  align-items: left; /* Centers vertically */
+  height: 40vh; /* Sets the height of the container to the full viewport height */
+  margin: 0; /* Removes any default margin */
+  padding: 0; /* Removes any default padding */
+}
+
+
+.text-content ul li {
+  padding: 5px 0; /* Reduces padding, adjust the top and bottom padding as needed */
+  margin: 2px 0; /* Reduces margin, adjust the top and bottom margin as needed */
+  list-style-type: none; /* Removes bullet points if not already done */
+}
+
+
+.text-content ul {
+  text-align: left; /* Aligns text to the left */
+  padding-left: 0px; /* Adjust as necessary to align text within the container */
+  margin: 0; /* Removes default margin */
+}
+
+.left-content { 
+  position: center;
+  top: 650px;
+  position: center;
+  width: 100%;
+ background-color: #bbd4ae;
+ padding-top: 20px;
+ padding-bottom: 30px;
+}
+
+.super-power {
+  position: absolute;
+  top: 85px;
+  left: 20px;
+  width: 30%;
+  color: var(--color1);
+  background-color: #bbd4ae;
+  height: 320px;
+}
