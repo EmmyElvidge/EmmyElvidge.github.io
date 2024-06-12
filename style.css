@@ -1,18 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@100..700&family=BenchNine:wght@300;400;700&family=Cabin+Condensed:wght@400;500;600;700&family=Concert+One&family=Itim&family=Lalezar&family=League+Spartan:wght@100..900&family=Lilita+One&family=Luckiest+Guy&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Passion+One:wght@400;700;900&family=Pathway+Gothic+One&family=Pragati+Narrow:wght@400;700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sarala:wght@400;700&family=Titan+One&family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
-
-
-:root {
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');:root {
   --color1: #005e0d;
   --color2: #525457;
   --color3: #7B6840;
-  --primaryfont :
-  font-family: font-family: "Sarala", sans-serif;
-}
+  --primaryFont:  "PT Serif", serif;
+  
 body {
-  font-family: "Sarala", sans-serif;
+  font-family: var(--primaryFont);
   background: #FFEFBA;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #8e9eab, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to top, #a4bf80, #effeed); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to top, #335128, #effeed); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
@@ -111,7 +107,6 @@ body, h1, h2, h3, p, ul, figure {
 }
 
 body {
-  font-family: Arial, sans-serif;
   line-height: 1.6;
   padding: 20px;
   background-color: #f4f4f4; /* Soft background color */
@@ -210,4 +205,4 @@ p {
 
 .header h1 {
   margin-bottom: 30px; /* Adds more space under the name */
-}
+  color: var(--color1)
