@@ -206,3 +206,12 @@ p {
 .header h1 {
   margin-bottom: 30px; /* Adds more space under the name */
   color: var(--color1)
+  .footer-links {
+    position: fixed;       /* Keeps the footer at the bottom of the viewport */
+    bottom: 0;             /* Aligns the container to the bottom */
+    width: 100%;           /* Ensures the container spans the width of the viewport */
+    text-align: center;    /* Centers the text (links) within the container */
+    background: #f8f8f8;   /* Optional: Adds a background color to the footer */
+    padding: 10px 0;       /* Adds some padding above and below the links */
+}
+
