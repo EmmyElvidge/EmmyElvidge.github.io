@@ -155,16 +155,20 @@ ul li {
   display: flex; /* Enables Flexbox */
   justify-content: center; /* Centers horizontally */
   align-items: left; /* Centers vertically */
-  height: 40vh; /* Sets the height of the container to the full viewport height */
+  height: 45vh; /* Sets the height of the container to the full viewport height */
   margin: 0; /* Removes any default margin */
   padding: 0; /* Removes any default padding */
 }
 
+li {
+  color: black; /* Sets the text color to black */
+ margin: left;
+}
 
 .text-content ul li {
   padding: 5px 0; /* Reduces padding, adjust the top and bottom padding as needed */
   margin: 2px 0; /* Reduces margin, adjust the top and bottom margin as needed */
-  list-style-type: none; /* Removes bullet points if not already done */
+  list-style-type: disc; /* Removes bullet points if not already done */
 }
 
 
@@ -184,6 +188,10 @@ ul li {
  padding-bottom: 30px;
 }
 
+p {
+  color: black; /* Sets the text color to black */
+}
+
 .super-power {
   position: absolute;
   top: 85px;
@@ -192,4 +200,14 @@ ul li {
   color: var(--color1);
   background-color: #bbd4ae;
   height: 320px;
+  list-style-type: disc;
+}
+
+.favorite-things ul li {
+  padding: 10px 0; /* Adds padding inside each item, top and bottom */
+  margin-bottom: 15px; /* Adds space between items */
+}
+
+.header h1 {
+  margin-bottom: 30px; /* Adds more space under the name */
 }
