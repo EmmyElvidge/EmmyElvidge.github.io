@@ -205,7 +205,8 @@ p {
 
 .header h1 {
   margin-bottom: 30px; /* Adds more space under the name */
-  color: var(--color1)
+  color: var(--color1);
+
   .footer-links {
     position: fixed;       /* Keeps the footer at the bottom of the viewport */
     bottom: 0;             /* Aligns the container to the bottom */
@@ -215,3 +216,22 @@ p {
     padding: 10px 0;       /* Adds some padding above and below the links */
 }
 
+.footer-links {
+  position: fixed;  /* Fixed positioning relative to the viewport */
+  left: 0;          /* Aligns the container to the left edge of the viewport */
+  right: 0;         /* Aligns the container to the right edge of the viewport */
+  bottom: 0;        /* Positions the container at the bottom of the viewport */
+  text-align: center; /* Centers the links within the container */
+  background-color: #f0f0f0; /* Gives a background color for visibility */
+  padding: 10px 0;  /* Adds padding above and below the links */
+}
+
+.footer-links a {
+  margin: 0 15px;   /* Adds horizontal spacing between the links */
+  text-decoration: none; /* Removes the underline from the links */
+  color: #333;      /* Sets the text color of the links */
+}
+
+.footer-links a:hover {
+  color: #666;      /* Changes the link color on hover for better interaction */
+}
